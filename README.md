@@ -55,6 +55,8 @@ $(MAIN_TARGET): $(OBJECTS)
 ```
 
 ---
+### 🔗 Live Demo
+Check out the live application here: [Multiprocessing Encrypt/Decrypt](https://8590a753-74ba-45db-815c-5940de2d8cd0-00-1w37b7nbka6vr.spock.replit.dev/)
 
 ## 🚧 Implementation Challenges & Solutions
 
