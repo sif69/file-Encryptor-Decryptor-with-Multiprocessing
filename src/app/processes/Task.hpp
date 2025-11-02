@@ -13,9 +13,9 @@ enum class Action {
 };
 
 struct Task {
-    std::string filePath;
     std::fstream f_stream;
     Action action;
+    std::string filePath;
 
     Task(std::fstream&& stream, Action act, std::string filePath) : f_stream(std::move(stream)), action(act), filePath(filePath) {}
 
@@ -33,7 +33,7 @@ struct Task {
         if (std::getline(iss, filePath, ',') && std::getline(iss, actionStr)) {
             Action action = (actionStr == "ENCRYPT") ? Action::ENCRYPT : Action::DECRYPT;
             IO io(filePath);
-            std::fstream f_stream = std::move(io.getFileStream());
+            std::fstream f_stream = io.getFileStream();
             if (f_stream.is_open()) {
                 return Task(std::move(f_stream), action, filePath);
             } else {
