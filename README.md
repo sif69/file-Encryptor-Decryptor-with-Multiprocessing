@@ -56,7 +56,7 @@ $(MAIN_TARGET): $(OBJECTS)
 
 ---
 ### 🔗 Live Demo
-Check out the live application here: [Multiprocessing Encrypt/Decrypt](https://8590a753-74ba-45db-815c-5940de2d8cd0-00-1w37b7nbka6vr.spock.replit.dev/)
+Check out the live application here: [securecrypt-encryption-platform.onrender.com](https://securecrypt-encryption-platform.onrender.com/)
 
 ## 🚧 Implementation Challenges & Solutions
 
